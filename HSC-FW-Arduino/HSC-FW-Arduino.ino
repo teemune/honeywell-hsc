@@ -6,8 +6,8 @@
 // Define the sensor type
 // Comment out others
 
-#define HSCMRNN030PA2A3
-//#define
+//#define HSCMRNN030PA2A3
+#define HSCDRRN001ND2A5
 //#define
 
 #define RESULT_DECIMALS 2
@@ -15,9 +15,17 @@
 #ifdef HSCMRNN030PA2A3
 const uint8_t HSC_SENSOR_ADDR = 0x28;
 const int16_t HSC_OUTPUT_MIN = 0;
-const int16_t HSC_OUTPUT_MAX = 0x3fff;       // 2^14 - 1
+const int16_t HSC_OUTPUT_MAX = 0x3fff;
 const float HSC_PRESSURE_MIN = 0.0;
 const float HSC_PRESSURE_MAX = 206842.7;
+#endif
+
+#ifdef HSCDRRN001ND2A5
+const uint8_t HSC_SENSOR_ADDR = 0x28;
+const int16_t HSC_OUTPUT_MIN = 0;
+const int16_t HSC_OUTPUT_MAX = 0x3fff;
+const float HSC_PRESSURE_MIN = -250;
+const float HSC_PRESSURE_MAX = 250;
 #endif
 
 uint32_t previousPost = 0;
