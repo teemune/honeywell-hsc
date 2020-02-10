@@ -1,2 +1,2 @@
 # honeywell-hsc
-Library for Honeywell HSC-series pressure sensors
+Arduino library for Honeywell HSC-series pressure sensors
