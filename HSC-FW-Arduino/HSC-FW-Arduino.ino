@@ -12,6 +12,7 @@
 
 #define RESULT_DECIMALS 2
 
+// example absolute sensor
 #ifdef HSCMRNN030PA2A3
 const uint8_t HSC_SENSOR_ADDR = 0x28;
 const int16_t HSC_OUTPUT_MIN = 0;
@@ -20,6 +21,7 @@ const float HSC_PRESSURE_MIN = 0.0;
 const float HSC_PRESSURE_MAX = 206842.7;
 #endif
 
+// example differential sensor
 #ifdef HSCDRRN001ND2A5
 const uint8_t HSC_SENSOR_ADDR = 0x28;
 const int16_t HSC_OUTPUT_MIN = 0;
